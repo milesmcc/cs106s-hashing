@@ -1,3 +1,29 @@
+// New notation!
+
+function addOne(n) {
+    return n + 1;
+}
+
+var addOne = n => n + 1;
+
+function swap(a, b) {
+    return (b, a);
+}
+
+var swap = (a, b) => (b, a);
+
+function manyThings() {
+    console.log("Hey there...!");
+    console.log(addOne(5));
+}
+
+var manyThings = () => {
+    console.log("Hey there...!");
+    console.log(addOne(5));
+}
+
+// Here's the good stuff...
+
 var hashCode = (str) => {
     var hash = 0;
     if (str.length == 0) return hash;
