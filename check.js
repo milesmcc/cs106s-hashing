@@ -1,4 +1,4 @@
-// New notation!
+// New notation and JavaScript features!
 
 function addOne(n) {
     return n + 1;
@@ -21,6 +21,17 @@ var manyThings = () => {
     console.log("Hey there...!");
     console.log(addOne(5));
 }
+
+let elements = ["one", "two", 3];
+for (let element of elements) {
+    console.log(element);
+}
+
+elements.forEach(console.log);
+
+console.log(elements.filter(x => x === "two"));
+
+document.querySelector("#heading").innerHTML = "🤫 Log In";
 
 // Here's the good stuff...
 
